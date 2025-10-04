@@ -1,0 +1,92 @@
+body {
+    background-color: #E6E6E6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 2px solid #222;
+}
+
+#bgm{
+    position: fixed;
+    bottom: 20px;;
+    align-items: center ;
+    z-index: 1000;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.battle-title {
+    font-size: 5em;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.money-emojis {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.battle-section {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.contestant {
+    text-align: center;
+    width: 32%;
+}
+
+.contestant img {
+    width: 95%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 3px solid #333;
+    background: #fff;
+}
+
+.contestant-name {
+    font-size: 3em;
+    margin: 12px 0 0 0;
+}
+
+.vs-icon {
+    width: 20%;
+    text-align: center;
+}
+
+.vs-img {
+    width: 330px;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .battle-section {
+        flex-direction: column;
+    }
+    .contestant, .vs-icon {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .vs-img {
+        width: 90px;
+    }
+}
+
+#advocates {    
+    text-decoration: none;
+    bottom: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
